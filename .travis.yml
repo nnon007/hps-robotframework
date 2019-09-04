@@ -4,7 +4,7 @@ sudo: false
 before_install:
   - rvm install 2.2
   - rvm use 2.2
-  - gem install hiptest-publisher
+  - gem install hiptest-publisher -v 1.24.0
   - hiptest-publisher -c robotframework.conf --only=tests --test-run-id=296501
   - pip install robotframework
 
